@@ -1,0 +1,34 @@
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.p12
+credentials.*
+.secrets/
+
+# Local generated images and boards
+assets/outputs/*
+!assets/outputs/.gitkeep
+data/personas/images/*
+!data/personas/images/.gitkeep
+data/personas/boards/*
+!data/personas/boards/.gitkeep
+data/albums/approved_images/*
+!data/albums/approved_images/.gitkeep
+data/albums/boards/*
+!data/albums/boards/.gitkeep
+
+# Logs and archives
+*.log
+*.zip
+*.tar.gz
