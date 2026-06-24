@@ -23,7 +23,7 @@ Shenbi Maliang organizes a real persona photo, reference images, and approved al
 
 ---
 
-![Shenbi Maliang Skill hero](assets/readme/hero-en.png)
+![Shenbi Maliang Skill hero](assets/readme/hero.png)
 
 ## Effect Example
 
@@ -190,8 +190,7 @@ flowchart TD
 │       └── boards/
 ├── assets/
 │   ├── readme/
-│   │   ├── hero-zh.png
-│   │   └── hero-en.png
+│   │   └── hero.png
 │   └── outputs/
 └── scripts/
     ├── archive_persona.py

@@ -23,7 +23,7 @@
 
 ---
 
-![神笔马良 Skill 主视觉](assets/readme/hero-zh.png)
+![神笔马良 Skill 主视觉](assets/readme/hero.png)
 
 ## 效果示例
 
@@ -188,8 +188,7 @@ flowchart TD
 │       └── boards/
 ├── assets/
 │   ├── readme/
-│   │   ├── hero-zh.png
-│   │   └── hero-en.png
+│   │   └── hero.png
 │   └── outputs/
 └── scripts/
     ├── archive_persona.py
