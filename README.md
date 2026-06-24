@@ -2,6 +2,8 @@
 
 # 神笔马良.skill
 
+简体中文 | [English](./README_EN.md)
+
 > 带着你的真人形象照，复刻参考图、沉淀个人画册，生成稳定可复用的个人视觉资产。
 
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
@@ -15,11 +17,13 @@
 
 神笔马良把「形象照」「参考图」「历史画册」组织成一套可复用的生图流程。它强制先确定人物来源，避免把原参考图人物、generic 人物或虚构人物混进结果里。
 
-[看效果](#效果示例) · [安装](#安装) · [怎么用](#怎么用) · [它解决什么](#它解决什么) · [隐私边界](#隐私边界) · [作者](#作者)
+[看效果](#效果示例) · [安装](#安装) · [怎么用](#怎么用) · [它解决什么](#它解决什么) · [隐私边界](#隐私边界) · [更多 Skills](#更多超级峰-skills) · [作者](#作者)
 
 </div>
 
 ---
+
+![神笔马良 Skill 主视觉](assets/readme/hero-zh.png)
 
 ## 效果示例
 
@@ -170,6 +174,7 @@ flowchart TD
 .
 ├── SKILL.md
 ├── README.md
+├── README_EN.md
 ├── data/
 │   ├── config.yaml
 │   ├── memory.md
@@ -182,6 +187,9 @@ flowchart TD
 │       ├── approved_images/
 │       └── boards/
 ├── assets/
+│   ├── readme/
+│   │   ├── hero-zh.png
+│   │   └── hero-en.png
 │   └── outputs/
 └── scripts/
     ├── archive_persona.py
@@ -202,11 +210,13 @@ flowchart TD
 
 如果你 fork 这个仓库自用，请确认自己的真人照片和生成图片只留在本地或私有仓库。
 
-## 与超级峰 Skill 集合的关系
+## 更多超级峰 Skills
 
-这个仓库是神笔马良的独立主仓库。更多超级峰沉淀的 Skills 见：
+如果你想看更多超级峰沉淀的实战 Skills，可以继续逛这个集合仓库：
 
 [mileson/chaojifeng-skills](https://github.com/mileson/chaojifeng-skills)
+
+神笔马良保持独立主仓库，方便单独安装、传播和维护；集合仓库更像一个总入口，适合继续发现其他 Skill。
 
 ## 许可证
 
