@@ -21,51 +21,12 @@ Shenbi Maliang organizes a real persona photo, reference images, and approved al
 
 </div>
 
----
 
 ![Shenbi Maliang Skill hero](assets/readme/hero.png)
 
-## Effect Example
+[Installation](#readme-section-1) · [Effect Example](#readme-section-2) · [Why It Exists](#readme-section-5) · [Repository Structure](#readme-section-8) · [Privacy Boundary](#readme-section-9) · [License](#readme-section-10) · [Author](#readme-section-11)
 
-```text
-User  ❯ Use my default persona photo, reference this tech cover, and create a 16:9 Bilibili cover.
-
-Agent ❯ I will first check data/personas/catalog.md and data/personas/images
-        to confirm an available persona photo, then break the reference into
-        composition, lighting, pose, and title-space decisions.
-
-        Brief for this run:
-        - Persona source: data/personas/images/<your-persona-file>
-        - Reference source: one tech cover
-        - Aspect ratio: 16:9
-        - Replacement rule: keep the reference composition, replace the person with your persona
-        - Negative constraints: do not blend faces, do not become the original reference person
-```
-
-```text
-User  ❯ Based on my previously approved album style, create a rainy-night street WeChat article cover.
-
-Agent ❯ I will refresh the album board, read each approved image's purpose,
-        style, and scene tags, then select 1 to 4 closest references for
-        "rainy-night street" and "WeChat article cover".
-
-        If the album is empty, I will not invent a style. I will ask you for a reference image.
-```
-
-This is not a simple "draw me a picture" workflow. Shenbi Maliang focuses on one thing first: **protect persona consistency, then reuse visual directions that have already been approved.**
-
-## Why It Exists
-
-Personal brands, indie makers, and content creators often run into the same problem: every AI-generated cover, avatar, or poster feels like a new lottery draw.
-
-Shenbi Maliang turns that process into repeatable steps:
-
-- **Persona gate**: no real persona photo, no generation.
-- **Reference remake**: one image preserves composition and atmosphere; multiple images get explicit roles.
-- **Personal album**: only user-approved outputs are saved for future reuse.
-- **Platform aspect routing**: built-in presets for Bilibili, Rednote, WeChat article covers, short-video covers, and more.
-- **Archive scripts**: organize persona photos, approved outputs, reference boards, and catalogs in stable folders.
-- **Privacy boundary**: the public repository contains no real portraits, generated album images, or personal runtime data.
+<a id="readme-section-1"></a>
 
 ## Installation
 
@@ -96,6 +57,39 @@ git clone https://github.com/mileson/shenbi-maliang ~/.claude/skills/shenbi-mali
 ```
 
 If you use Codex, Cursor, OpenClaw, or another runtime, place the repository in that runtime's skills directory.
+
+<a id="readme-section-2"></a>
+
+## Effect Example
+
+```text
+User  ❯ Use my default persona photo, reference this tech cover, and create a 16:9 Bilibili cover.
+
+Agent ❯ I will first check data/personas/catalog.md and data/personas/images
+        to confirm an available persona photo, then break the reference into
+        composition, lighting, pose, and title-space decisions.
+
+        Brief for this run:
+        - Persona source: data/personas/images/<your-persona-file>
+        - Reference source: one tech cover
+        - Aspect ratio: 16:9
+        - Replacement rule: keep the reference composition, replace the person with your persona
+        - Negative constraints: do not blend faces, do not become the original reference person
+```
+
+```text
+User  ❯ Based on my previously approved album style, create a rainy-night street WeChat article cover.
+
+Agent ❯ I will refresh the album board, read each approved image's purpose,
+        style, and scene tags, then select 1 to 4 closest references for
+        "rainy-night street" and "WeChat article cover".
+
+        If the album is empty, I will not invent a style. I will ask you for a reference image.
+```
+
+This is not a simple "draw me a picture" workflow. Shenbi Maliang focuses on one thing first: **protect persona consistency, then reuse visual directions that have already been approved.**
+
+<a id="readme-section-3"></a>
 
 ## Usage
 
@@ -149,6 +143,8 @@ python3 scripts/archive_image.py \
   --refresh
 ```
 
+<a id="readme-section-4"></a>
+
 ## Workflow
 
 ```mermaid
@@ -169,6 +165,40 @@ flowchart TD
   K -- "Yes" --> L["Archive output and refresh album board"]
   K -- "No" --> M["Finish without writing to album"]
 ```
+
+<a id="readme-section-5"></a>
+
+## Why It Exists
+
+Personal brands, indie makers, and content creators often run into the same problem: every AI-generated cover, avatar, or poster feels like a new lottery draw.
+
+Shenbi Maliang turns that process into repeatable steps:
+
+- **Persona gate**: no real persona photo, no generation.
+- **Reference remake**: one image preserves composition and atmosphere; multiple images get explicit roles.
+- **Personal album**: only user-approved outputs are saved for future reuse.
+- **Platform aspect routing**: built-in presets for Bilibili, Rednote, WeChat article covers, short-video covers, and more.
+- **Archive scripts**: organize persona photos, approved outputs, reference boards, and catalogs in stable folders.
+- **Privacy boundary**: the public repository contains no real portraits, generated album images, or personal runtime data.
+
+<a id="readme-section-6"></a>
+
+## More Chaojifeng Skills
+
+To explore more practical Skills maintained by Chaojifeng, visit:
+
+[mileson/chaojifeng-skills](https://github.com/mileson/chaojifeng-skills)
+
+Shenbi Maliang stays as an independent main repository so it can be installed, shared, and maintained on its own. The collection repository works better as a broader discovery entry.
+
+<a id="readme-section-7"></a>
+
+## Further reading
+
+- [Contributing](CONTRIBUTING.md)
+- [Security reporting](SECURITY.md)
+
+<a id="readme-section-8"></a>
 
 ## Repository Structure
 
@@ -199,6 +229,8 @@ flowchart TD
     └── refresh_boards.py
 ```
 
+<a id="readme-section-9"></a>
+
 ## Privacy Boundary
 
 The public repository contains only the workflow, scripts, and empty data skeleton:
@@ -211,17 +243,13 @@ The public repository contains only the workflow, scripts, and empty data skelet
 
 If you fork this repository for personal use, keep your real portraits and generated images local or in a private repository.
 
-## More Chaojifeng Skills
-
-To explore more practical Skills maintained by Chaojifeng, visit:
-
-[mileson/chaojifeng-skills](https://github.com/mileson/chaojifeng-skills)
-
-Shenbi Maliang stays as an independent main repository so it can be installed, shared, and maintained on its own. The collection repository works better as a broader discovery entry.
+<a id="readme-section-10"></a>
 
 ## License
 
 MIT
+
+<a id="readme-section-11"></a>
 
 ## Author
 
@@ -232,6 +260,5 @@ MIT
 - Kuaishou: [超级峰](https://www.kuaishou.com/profile/3xeqsssav5aif84)
 - Jike: [超级峰](https://web.okjike.com/u/E769500F-3283-4BAE-B2F3-D1F0E944CB70)
 
----
 
 _If you want to turn your visual style from one-off generations into a long-term asset, Shenbi Maliang is the starting point._
