@@ -1,15 +1,28 @@
+<a id="神笔马良skill"></a>
+
 <div align="center">
 
-# 神笔马良.skill
+# 神笔马良 · 个人视觉资产 Skill
 
+**带着真人形象照，组织参考图与可复用的个人画册。**
 
+形象照参考 · 风格复刻 · 个人画册 · 视觉资产
 
-> 带着你的真人形象照，复刻参考图、沉淀个人画册，生成稳定可复用的个人视觉资产。
-
+[![中文说明](https://img.shields.io/badge/%E8%AF%B4%E6%98%8E-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-059669)](#readme-detail-15)
+[![项目类型](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE-Skill-6366f1)](#readme-detail-15)
 [![许可证](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Compatible-blue)](https://agentskills.io)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add-7c3aed)](#安装)
 [![Privacy](https://img.shields.io/badge/privacy-no%20sample%20portraits-black)](#隐私边界)
+
+[👀 效果预览](#readme-detail-15) · [✅ 适用场景](#readme-detail-audience) · [🚀 安装](#readme-detail-17) · [🔒 隐私边界](#readme-detail-27) · [🎯 从什么问题开始](#readme-detail-13) · [📖 怎么用](#readme-detail-19)
+
+</div>
+
+---
+
+> 带着你的真人形象照，复刻参考图、沉淀个人画册，生成稳定可复用的个人视觉资产。
+
 
 <br>
 
@@ -19,31 +32,18 @@
 
 [看效果](#效果示例) · [安装](#安装) · [怎么用](#怎么用) · [它解决什么](#它解决什么) · [隐私边界](#隐私边界) · [更多 Skills](#更多超级峰-skills) · [作者](#作者)
 
-</div>
+
 
 
 ![神笔马良 Skill 主视觉](assets/readme/hero.png)
 
-[它解决什么](#readme-section-1) · [效果示例](#readme-section-2) · [安装](#readme-section-3) · [工作流](#readme-section-5) · [仓库结构](#readme-section-7) · [隐私边界](#readme-section-8) · [许可证](#readme-section-9)
-
-<a id="readme-section-1"></a>
-
-## 它解决什么
-
-很多个人 IP、独立开发者、内容创作者都会遇到一个问题：每次让 AI 生成封面、头像或海报，都像重新抽一次盲盒。
-
-神笔马良把这个过程拆成可重复的几个环节：
-
-- **形象照门禁**：没有真人形象照就不生成，避免人物不稳定。
-- **参考图复刻**：单图保留构图和气质，多图明确每张图负责什么。
-- **个人画册**：只沉淀用户确认满意的成品图，下次可以直接复用风格。
-- **平台画幅路由**：内置 B站、小红书、视频号、公众号封面图等常见比例。
-- **归档脚本**：把形象照、成品图、参考板和索引组织到固定目录。
-- **隐私边界**：公开仓库不包含任何真人图片、画册成品或个人运行数据。
-
 <a id="readme-section-2"></a>
 
-## 效果示例
+<a id="效果示例"></a>
+
+<a id="readme-detail-15"></a>
+
+## 👀 效果预览
 
 ```text
 用户  ❯ 使用我的默认形象照，参考这张科技封面，生成一张 B站 16:9 封面。
@@ -70,9 +70,38 @@ Agent ❯ 我会先刷新画册板，读取每张已沉淀图的用途、风格�
 
 这不是普通的「帮我画一张图」。神笔马良的重点是：**先保护人物一致性，再复用已经验证过的视觉方向。**
 
+<a id="readme-detail-audience"></a>
+
+## ✅ 适用场景
+
+适合使用本人授权形象照制作视觉内容的创作者。
+
+<a id="readme-section-1"></a>
+
+<a id="它解决什么"></a>
+
+<a id="readme-detail-13"></a>
+
+## 🎯 从什么问题开始
+
+很多个人 IP、独立开发者、内容创作者都会遇到一个问题：每次让 AI 生成封面、头像或海报，都像重新抽一次盲盒。
+
+神笔马良把这个过程拆成可重复的几个环节：
+
+- **形象照门禁**：没有真人形象照就不生成，避免人物不稳定。
+- **参考图复刻**：单图保留构图和气质，多图明确每张图负责什么。
+- **个人画册**：只沉淀用户确认满意的成品图，下次可以直接复用风格。
+- **平台画幅路由**：内置 B站、小红书、视频号、公众号封面图等常见比例。
+- **归档脚本**：把形象照、成品图、参考板和索引组织到固定目录。
+- **隐私边界**：公开仓库不包含任何真人图片、画册成品或个人运行数据。
+
 <a id="readme-section-3"></a>
 
-## 安装
+<a id="安装"></a>
+
+<a id="readme-detail-17"></a>
+
+## 🚀 安装
 
 神笔马良基于 Agent Skills 结构，可以被支持 Skills 的 Agent runtime 安装。
 
@@ -104,7 +133,11 @@ git clone https://github.com/mileson/shenbi-maliang ~/.claude/skills/shenbi-mali
 
 <a id="readme-section-4"></a>
 
-## 怎么用
+<a id="怎么用"></a>
+
+<a id="readme-detail-19"></a>
+
+## 📖 怎么用
 
 ### 1. 先归档你的形象照
 
@@ -158,7 +191,11 @@ python3 scripts/archive_image.py \
 
 <a id="readme-section-5"></a>
 
-## 工作流
+<a id="工作流"></a>
+
+<a id="readme-detail-21"></a>
+
+## 🔄 工作流
 
 ```mermaid
 flowchart TD
@@ -181,14 +218,27 @@ flowchart TD
 
 <a id="readme-section-6"></a>
 
-## 进一步阅读
+<a id="进一步阅读"></a>
+
+<a id="readme-detail-23"></a>
+
+## 📚 进一步阅读
 
 - [贡献指南](CONTRIBUTING.md)
 - [安全反馈](SECURITY.md)
 
 <a id="readme-section-7"></a>
 
-## 仓库结构
+<a id="仓库结构"></a>
+
+<a id="readme-detail-25"></a>
+
+## 📁 仓库结构
+
+下面按实现职责列出目录位置，便于把修改放回对应模块。
+
+<details>
+<summary>展开目录与模块位置</summary>
 
 ```text
 .
@@ -216,9 +266,15 @@ flowchart TD
     └── refresh_boards.py
 ```
 
+</details>
+
 <a id="readme-section-8"></a>
 
-## 隐私边界
+<a id="隐私边界"></a>
+
+<a id="readme-detail-27"></a>
+
+## 🔒 隐私边界
 
 公开仓库只提供流程、脚本和空数据骨架：
 
@@ -232,13 +288,21 @@ flowchart TD
 
 <a id="readme-section-9"></a>
 
-## 许可证
+<a id="许可证"></a>
+
+<a id="readme-detail-29"></a>
+
+## 📄 许可证
 
 MIT
 
 <a id="readme-section-10"></a>
 
-## 更多超级峰 Skills
+<a id="更多超级峰-skills"></a>
+
+<a id="readme-detail-31"></a>
+
+## 📌 更多超级峰 Skills
 
 如果你想看更多超级峰沉淀的实战 Skills，可以继续逛这个集合仓库：
 
@@ -248,7 +312,11 @@ MIT
 
 <a id="readme-section-11"></a>
 
-## 作者
+<a id="作者"></a>
+
+<a id="readme-detail-33"></a>
+
+## 👤 作者
 
 - SoulCard: [超级峰](https://soulcard.me/card/chaojifeng)
 - X: [Mileson07](https://x.com/Mileson07)
