@@ -2,11 +2,11 @@
 
 # 神笔马良.skill
 
-简体中文 | [English](./README_EN.md)
+
 
 > 带着你的真人形象照，复刻参考图、沉淀个人画册，生成稳定可复用的个人视觉资产。
 
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![许可证](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Compatible-blue)](https://agentskills.io)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add-7c3aed)](#安装)
 [![Privacy](https://img.shields.io/badge/privacy-no%20sample%20portraits-black)](#隐私边界)
@@ -194,7 +194,6 @@ flowchart TD
 .
 ├── SKILL.md
 ├── README.md
-├── README_EN.md
 ├── data/
 │   ├── config.yaml
 │   ├── memory.md
