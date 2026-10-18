@@ -21,9 +21,27 @@
 
 </div>
 
----
 
 ![神笔马良 Skill 主视觉](assets/readme/hero.png)
+
+[它解决什么](#readme-section-1) · [效果示例](#readme-section-2) · [安装](#readme-section-3) · [工作流](#readme-section-5) · [仓库结构](#readme-section-7) · [隐私边界](#readme-section-8) · [许可证](#readme-section-9)
+
+<a id="readme-section-1"></a>
+
+## 它解决什么
+
+很多个人 IP、独立开发者、内容创作者都会遇到一个问题：每次让 AI 生成封面、头像或海报，都像重新抽一次盲盒。
+
+神笔马良把这个过程拆成可重复的几个环节：
+
+- **形象照门禁**：没有真人形象照就不生成，避免人物不稳定。
+- **参考图复刻**：单图保留构图和气质，多图明确每张图负责什么。
+- **个人画册**：只沉淀用户确认满意的成品图，下次可以直接复用风格。
+- **平台画幅路由**：内置 B站、小红书、视频号、公众号封面图等常见比例。
+- **归档脚本**：把形象照、成品图、参考板和索引组织到固定目录。
+- **隐私边界**：公开仓库不包含任何真人图片、画册成品或个人运行数据。
+
+<a id="readme-section-2"></a>
 
 ## 效果示例
 
@@ -52,18 +70,7 @@ Agent ❯ 我会先刷新画册板，读取每张已沉淀图的用途、风格�
 
 这不是普通的「帮我画一张图」。神笔马良的重点是：**先保护人物一致性，再复用已经验证过的视觉方向。**
 
-## 它解决什么
-
-很多个人 IP、独立开发者、内容创作者都会遇到一个问题：每次让 AI 生成封面、头像或海报，都像重新抽一次盲盒。
-
-神笔马良把这个过程拆成可重复的几个环节：
-
-- **形象照门禁**：没有真人形象照就不生成，避免人物不稳定。
-- **参考图复刻**：单图保留构图和气质，多图明确每张图负责什么。
-- **个人画册**：只沉淀用户确认满意的成品图，下次可以直接复用风格。
-- **平台画幅路由**：内置 B站、小红书、视频号、公众号封面图等常见比例。
-- **归档脚本**：把形象照、成品图、参考板和索引组织到固定目录。
-- **隐私边界**：公开仓库不包含任何真人图片、画册成品或个人运行数据。
+<a id="readme-section-3"></a>
 
 ## 安装
 
@@ -94,6 +101,8 @@ git clone https://github.com/mileson/shenbi-maliang ~/.claude/skills/shenbi-mali
 ```
 
 如果你使用的是 Codex、Cursor、OpenClaw 或其他 runtime，把仓库放到对应的 skills 目录即可。
+
+<a id="readme-section-4"></a>
 
 ## 怎么用
 
@@ -147,6 +156,8 @@ python3 scripts/archive_image.py \
   --refresh
 ```
 
+<a id="readme-section-5"></a>
+
 ## 工作流
 
 ```mermaid
@@ -167,6 +178,15 @@ flowchart TD
   K -- "是" --> L["归档成品图并刷新画册板"]
   K -- "否" --> M["结束，不写入画册"]
 ```
+
+<a id="readme-section-6"></a>
+
+## 进一步阅读
+
+- [贡献指南](CONTRIBUTING.md)
+- [安全反馈](SECURITY.md)
+
+<a id="readme-section-7"></a>
 
 ## 仓库结构
 
@@ -197,6 +217,8 @@ flowchart TD
     └── refresh_boards.py
 ```
 
+<a id="readme-section-8"></a>
+
 ## 隐私边界
 
 公开仓库只提供流程、脚本和空数据骨架：
@@ -209,6 +231,14 @@ flowchart TD
 
 如果你 fork 这个仓库自用，请确认自己的真人照片和生成图片只留在本地或私有仓库。
 
+<a id="readme-section-9"></a>
+
+## 许可证
+
+MIT
+
+<a id="readme-section-10"></a>
+
 ## 更多超级峰 Skills
 
 如果你想看更多超级峰沉淀的实战 Skills，可以继续逛这个集合仓库：
@@ -217,9 +247,7 @@ flowchart TD
 
 神笔马良保持独立主仓库，方便单独安装、传播和维护；集合仓库更像一个总入口，适合继续发现其他 Skill。
 
-## 许可证
-
-MIT
+<a id="readme-section-11"></a>
 
 ## 作者
 
@@ -230,6 +258,5 @@ MIT
 - 快手: [超级峰](https://www.kuaishou.com/profile/3xeqsssav5aif84)
 - 即刻: [超级峰](https://web.okjike.com/u/E769500F-3283-4BAE-B2F3-D1F0E944CB70)
 
----
 
 _如果你想把自己的视觉风格从一次性生成变成长期资产，神笔马良就是这个起点。_
